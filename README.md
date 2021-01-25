@@ -52,6 +52,6 @@
 
 <ul>
   <li>
-    <p>Licensed under MIT (https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md)</p>
+    <p>Licensed under MIT (https://github.com/gieart87/theme-indomarket/blob/master/LICENSE.md)</p>
   </li>
 </ul>
