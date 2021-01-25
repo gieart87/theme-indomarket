@@ -6,7 +6,7 @@
 
 <p>Within the download you’ll find the following directories and files:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>argon/
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>indomarket/
 ├── CHANGELOG.md
 ├── LICENSE.md
 ├── README.md
