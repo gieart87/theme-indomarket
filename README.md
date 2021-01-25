@@ -1,5 +1,7 @@
 <h1 id="argon-design-system">IndoMarket - Free Ecommerce Bootstrap Theme</h1>
 
+<p>IndoMarket is a free E-Commerce website template built on Boostrap 4 and Argon Design System (https://demos.creative-tim.com/argon-design-system/)</p>
+
 <h2 id="file-structure">File Structure</h2>
 
 <p>Within the download you’ll find the following directories and files:</p>
