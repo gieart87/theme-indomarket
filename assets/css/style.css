@@ -2,6 +2,12 @@ body, button, input, select, optgroup, textarea {
     font-family: 'Poppins', sans-serif;
 }
 
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -90,12 +96,24 @@ body, button, input, select, optgroup, textarea {
 
 .header .navbar-main {
     padding: .25rem;
+    text-transform: uppercase;
+}
+
+.header .navbar-main .dropdown-menu .dropdown-item {
+    padding: 8px 15px !important;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.header .navbar-main .nav-link {
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 /* Slider Section */
 
 .slider-section {
-    background-color: #f6f7f9;
+    background-color: #F6F7FB;
 }
 
 .slider-inner {
@@ -208,13 +226,15 @@ body, button, input, select, optgroup, textarea {
 /*---------------------------
 Mobile Apps 
 ----------------------------*/
+
 .mobile-apps {
-    background: #f6f7f9;
+    background: #F6F7FB;
 }
 
 /*---------------------------
 FOOTER
 ----------------------------*/
+
 .footer {
     padding-bottom: 5px;
 }
@@ -240,7 +260,7 @@ FOOTER
     color: #FFF !important;
 }
 
-.single-footer .call span{
+.single-footer .call span {
     font-size: 20px;
     display: block;
     font-weight: 600;
@@ -299,4 +319,179 @@ FOOTER
 
 .footer .copyright .payment-cards li {
     display: inline-block;
+}
+
+/*--------------------
+Products Page
+----------------------*/
+
+/* breadcrumb */
+
+.breadcrumb-section {
+    background-color: #F6F7FB;
+}
+
+.breadcrumb-section .breadcrumb {
+    padding-bottom: 0;
+    font-size: 14px;
+    background-color: #F6F7FB;
+}
+
+.products-grid .single-product {
+    margin-bottom: 25px;
+}
+
+/* sidebar */
+
+.sidebar .sidebar-widget {
+    padding: 10px 20px;
+    background-color: #F6F7FB;
+    margin-bottom: 20px;
+    border-radius: 0.25rem;
+}
+
+.sidebar .sidebar-title h3 {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.sidebar .sidebar-widget .widget-title h3 {
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    border-bottom: .0625rem solid #e9ecef;
+    text-transform: uppercase;
+}
+
+.sidebar .sidebar-widget .widget-categories ul, .sidebar .sidebar-widget .widget-brands ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: .9rem;
+}
+
+.sidebar .sidebar-widget .widget-categories ul li, .sidebar .sidebar-widget .widget-brands ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.sidebar .sidebar-widget .widget-categories ul li a, .sidebar .sidebar-widget .widget-brands ul li a {
+    color: #333;
+}
+
+.sidebar .sidebar-widget .widget-categories ul li a:hover, .sidebar .sidebar-widget .widget-brands ul li a:hover {
+    color: #3d55df;
+    transition: 0.5s;
+}
+
+.products-grid .shop-by-price .price-filter {
+    display: block;
+    margin-top: 20px;
+}
+
+.products-grid .shop-by-price #slider-range {
+    box-shadow: none;
+    border: none;
+    height: 4px;
+    background: #5e72e4;
+    color: #5e72e4;
+    border-radius: 0px;
+}
+
+.products-grid .shop-by-price #slider-range .ui-slider-range {
+    box-shadow: none;
+    background: #222;
+    border-radius: 0px;
+    border: none;
+}
+
+.products-grid .shop-by-price .ui-slider-handle.ui-state-default.ui-corner-all {
+    width: 14px;
+    height: 14px;
+    line-height: 10px;
+    background: #222;
+    border: none;
+    border-radius: 100%;
+    top: -5px;
+}
+
+.products-grid .shop-by-price .label-input {
+    margin-top: 15px;
+}
+
+.products-grid .shop-by-price .label-input>button {
+    background-color: transparent;
+    border: medium none;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1;
+    padding: 4px 0 0;
+    text-transform: capitalize;
+    float: right;
+    font-size: 14px;
+}
+
+.products-grid .shop-by-price .ui-slider-handle.ui-state-default.ui-corner-all {
+    background: #3d55df;
+    color: #3d55df;
+    cursor: pointer;
+}
+
+.products-grid .shop-by-price .label-input input {
+    border: none;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #222;
+    background: transparent;
+}
+
+.products-grid .shop-by-price .check-box-list {
+    margin-top: 15px;
+}
+
+.products-grid .shop-by-price .check-box-list li {
+    margin-bottom: 5px;
+}
+
+.products-grid .shop-by-price .check-box-list li:last-child {
+    margin: 0;
+}
+
+.products-grid .shop-by-price .check-box-list li label input {
+    display: inline-block;
+    margin-right: 6px;
+    position: relative;
+    top: 1px;
+}
+
+.products-grid .shop-by-price .check-box-list li label {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    cursor: pointer;
+}
+
+.products-grid .shop-by-price .check-box-list .count {
+    margin-left: 5px;
+    color: #666;
+}
+
+/* products top filter */
+
+.products-grid .products-top {
+    background-color: #F6F7FB;
+    padding: 15px 15px;
+    border-radius: 0.25rem;
+    margin-bottom: 30px;
+}
+
+.products-grid .products-top > select {
+    border: 1px solid #ccc;
+    min-width: 150px;
 }
